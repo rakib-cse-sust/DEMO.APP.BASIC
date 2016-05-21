@@ -24,12 +24,16 @@
                 </button>
                 <a href="~/Dashboard/Index" class="navbar-brand"><i class="fa fa-connectdevelop fa-lg" style="padding-right:10px;color:#fff" aria-hidden="true"></i>DEMO APPLICATION</a>
             </div>
+
             @Html.Partial("_LoginPartial")
+
         </div>
     </nav>
 
     <div class="container">
+
         @RenderBody()
+
         <hr />
         <footer style="text-align:center">
             <p>&copy; @DateTime.Now.Year - DEMO APPLICATION</p>
