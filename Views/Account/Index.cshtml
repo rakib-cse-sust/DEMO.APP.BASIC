@@ -13,7 +13,6 @@
 @*<form id="registration" @AntiForgeryExtension.RequestVerificationToken(null)>
 </form>*@
 
-
 @*<form id="antiForgeryForm">
     @Html.AntiForgeryToken()
 </form>
@@ -32,13 +31,13 @@ myApp.config(['$httpProvider', function ($httpProvider) {
     <div class="col-md-7">
         <img class="img-responsive" src="http://il6.picdn.net/shutterstock/videos/13346843/thumb/1.jpg" style="border-right:1px solid rgba(91, 192, 222, 0.43);width:630px;" />
     </div>
-    <div ng-app="accountApp" class="col-md-4" style="border:0px solid black;">
+
+    <div ng-app="accountApp" class="col-md-4">
 
         <div ui-view></div>
 
     </div>
 
-    <div class="col-md-1">
-    </div>
+    <div class="col-md-1"></div>
 
 </div>
