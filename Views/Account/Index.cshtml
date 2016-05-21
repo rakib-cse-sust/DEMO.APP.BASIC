@@ -1,0 +1,26 @@
+﻿<script src="/scripts/angular.min.js"></script>
+<script src = "/scripts/angular-ui-router.min.js"></script>
+<script src="/Modules/Account/angular/Account.module.js"></script>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="height:50px;"></div>
+
+<div class="row">
+
+    <div class="col-md-7" style="top:10px;">
+        <img class="img-responsive" src="http://il6.picdn.net/shutterstock/videos/13346843/thumb/1.jpg" style="border-right:1px solid rgba(91, 192, 222, 0.43);width:630px;" />
+    </div>
+    <div ng-app="accountApp" class="col-md-4" style="border:0px solid black;height:400px;position:relative;">
+
+        <div ui-view style="position:relative;top:15%;"></div>
+
+    </div>
+
+    <div class="col-md-1">
+    </div>
+
+</div>

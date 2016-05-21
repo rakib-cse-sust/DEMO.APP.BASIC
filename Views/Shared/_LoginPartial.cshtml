@@ -1,0 +1,27 @@
+﻿@if (ViewBag.IsValidLogin != null)
+{
+    <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <img style="width:30px;margin-right:5px;border-radius:2px;" src="http://lh3.googleusercontent.com/-RfE_NVpzLH8/AAAAAAAAAAI/AAAAAAAAF5g/lm-NBdu8aJU/photo.jpg">
+                    Rakib Jahan Khan
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li>
+                        <a href="~/Account/Signout">
+                            <i class="fa fa-sign-out"></i>
+                            Sign out
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+}
