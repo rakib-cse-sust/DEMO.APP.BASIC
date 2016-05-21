@@ -1,11 +1,17 @@
-﻿<script src="/scripts/angular.min.js"></script>
+﻿@using DEMO.APP.BASIC.App_Start
+
+<script src="/scripts/angular.min.js"></script>
 <script src = "/scripts/angular-ui-router.min.js"></script>
 <script src="/Modules/Account/angular/Account.module.js"></script>
 
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    //var token = @AntiForgeryExtension.RequestVerificationToken(null);
 }
+
+@*<form id="registration" @AntiForgeryExtension.RequestVerificationToken(null)>
+</form>*@
 
 <div style="height:50px;"></div>
 

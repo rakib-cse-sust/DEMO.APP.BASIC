@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DEMO.APP.BASIC.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,6 +16,7 @@ namespace DEMO.APP.BASIC.Controllers
         }
 
         [HttpPost]
+        //[ValidateAntiForgeryAngular]
         public ActionResult Signin(FormCollection fc)
         {
             return RedirectToAction("Index", "Dashboard");
