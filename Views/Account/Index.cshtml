@@ -13,6 +13,18 @@
 @*<form id="registration" @AntiForgeryExtension.RequestVerificationToken(null)>
 </form>*@
 
+
+@*<form id="antiForgeryForm">
+    @Html.AntiForgeryToken()
+</form>
+
+var myApp = angular.module('myApp', []);
+
+myApp.config(['$httpProvider', function ($httpProvider) {
+    var antiForgeryToken = document.getElementById('antiForgeryForm').childNodes[1].value;
+    $httpProvider.defaults.headers.post['__RequestVerificationToken'] = antiForgeryToken;
+}]);*@
+
 <div style="height:50px;"></div>
 
 <div class="row">
